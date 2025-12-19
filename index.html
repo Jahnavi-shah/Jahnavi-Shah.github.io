@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jahnavi Shah | Engineering Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --beige: #f5f1e8;
+      --beige-dark: #e6dfd3;
+      --text: #2b2b2b;
+      --card: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", Arial, sans-serif;
+      background: var(--beige);
+      color: var(--text);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(245,241,232,0.95);
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    /* ABOUT */
+    .hero {
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(120deg, #e9e2d5, #f5f1e8, #e6dfd3);
+      background-size: 300% 300%;
+      animation: move 12s ease infinite;
+      border-radius: 16px;
+    }
+
+    @keyframes move {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .about-card {
+      background: rgba(255,255,255,0.95);
+      padding: 2.5rem;
+      border-radius: 16px;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 2rem;
+      max-width: 850px;
+    }
+
+    .about-card img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--beige-dark);
+    }
+
+    /* PROJECT GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .tile {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .tile:hover {
+      transform: translateY(-4px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <strong>Jahnavi Shah</strong>
+  <div>
+    <a href="#about">About</a>
+    <a href="#engineering">Engineering</a>
+    <a href="pdfs/Jahnavi_Shah_Resume.pdf" target="_blank">Resume</a>
+  </div>
+</nav>
+
+<section id="about">
+  <div class="hero">
+    <div class="about-card">
+      <!-- 🔴 REPLACE profile.jpg -->
+      <img src="images/Jahnavi Image.jpg" alt="Profile photo">
+
+      <div>
+        <h1>About Me</h1>
+        <p>
+          Thank you for visiting my portfolio! I recently graduated with a degree
+          in Biomedical Engineering from Rutgers University. My experiences span
+          academic research, industry R&D in medical adhesives, and clinical work
+          in emergency department, which has shaped my perspective about
+          engineering in healthcare.
+        </p>
+        <p>
+          Much of my work has been focused on biomaterials, wound healing, and
+          drug delivery. You can find a collection of my research, projects, and
+          technical experiences under the Engineering tab.
+        </p>
+        <p>
+          Feel free to reach out to me to learn more about my work.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="engineering">
+  <h1>Engineering Projects</h1>
+
+  <div class="grid">
+
+    <a class="tile" href="Stamp">
+      <h3>3D-Printed In-Vitro Chronic Wound Model</h3>
+    </a>
+
+    <a class="tile" href="PEC films">
+      <h3>Polyelectrolyte Complex Film Dressing</h3>
+    </a>
+
+    <a class="tile" href="Biomechanics">
+      <h3>Pregnancy Biomechanics Analysis</h3>
+    </a>
+
+    <a class="tile" href="Measurements lab">
+      <h3>Fluorescence Microscopy & FRAP</h3>
+    </a>
+
+    <a class="tile" href="Tissue Engineering">
+      <h3>Physician Burnout and Retention Proposal</h3>
+    </a>
+
+    <a class="tile" href="Schlenk line">
+      <h3>Schlenk Line Development for Karstedt Catalyst Synthesis</h3>
+    </a>
+
+  </div>
+</section>
+
+
+<footer>
+  © 2025 Jahnavi Shah
+</footer>
+
+</body>
+</html>
