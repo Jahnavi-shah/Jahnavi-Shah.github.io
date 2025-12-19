@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pregnancy Biomechanics Analysis</title>
+  <title>Fluorescence Microscopy Analysis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -43,7 +43,7 @@
     }
 
     /* FIGURE GRID */
-    .media-grid {
+     .media-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2.5rem;
@@ -70,7 +70,6 @@
       margin-top: 0.75rem;
       font-size: 0.9rem;
       color: #333;
-      line-height: 1.45;
     }
 
     .pdf-links {
@@ -101,7 +100,7 @@
 }
 
 .pdf-box:hover {
-  transform: perspective(1000px);
+  transform: perspective(1000px) rotateX(2deg) rotateY(-2deg);
   box-shadow: 0 25px 50px rgba(0,0,0,0.25), 0 15px 25px rgba(0,0,0,0.15);
 }
 
@@ -123,72 +122,74 @@
 
 <body>
 
-<!-- NAVIGATION -->
 <nav>
   <a href="engineering.html">← Back to Engineering</a>
 </nav>
 
-<!-- MAIN CONTENT -->
 <main>
-  <h1>Pregnancy Biomechanics Analysis</h1>
+
+  <h1>Fluorescence Microscopy and Image Analysis</h1>
   <div class="subtitle">
-    Introduction to Biomechanics (14:125:308)
+    BME Measurement and Analysis Laboratory (14:125:315)
   </div>
 
   <p>
-    Introduction to Biomechanics (14:125:308): For the final project in course, our team
-    analyzed the effects of different stages of gestation on lower back pain.
-    While lower back pain is often reported early in pregnancy, its biomechanical
-    causes evolve as gestation progresses.
+    BME Measurement and Analysis Laboratory (14:125:315): For this project, we explored fluorescence microscopy as a quantitative tool for
+    biomedical image capture and analysis. Fluorescence imaging was used to
+    evaluate signal-to-noise ratio under varying exposure times and imaging
+    conditions.
   </p>
 
   <p>
-    Using free-body diagrams and static equilibrium modeling, we examined how
-    changes in spinal curvature, body weight, and center of mass across
-    trimesters influence spinal forces. Our analysis showed that changes in
-    lumbar spinal curvature, particularly in the later stages of pregnancy, are
-    the dominant contributor to increased back pain.
+    We performed live/dead cell viability analysis and quantified cell
+    populations using ImageJ and MATLAB. In addition, Fluorescence Recovery
+    After Photobleaching (FRAP) experiments were conducted to analyze molecular
+    diffusion and estimate the viscosity of protein-dense droplets.
   </p>
 
   <p>
-    These findings highlight the importance of biomechanical modeling in
-    understanding pregnancy-related discomfort and informing potential
-    mitigation strategies.
+    This project demonstrates the application of quantitative fluorescence
+    techniques for biological characterization and highlights the integration
+    of experimental imaging with computational analysis.
   </p>
 
   <!-- IMAGES + EXISTING EXPLANATIONS -->
   <div class="media-grid">
 
     <figure>
-      <img src="biomechanics_image1.png" alt="Free Body Diagram Analysis">
+      <img src="measurements_image1.png"
+           alt="Live and Dead Cell Comparison Using Fluorescence Microscopy">
       <figcaption>
-        <strong>Free Body Diagram Analysis:</strong>
-        Free-body diagrams were constructed to model the forces acting on the
-        lumbar spine at different stages of gestation, accounting for changes in
-        body weight distribution and center of mass.
+        <strong>Live/Dead Cell Viability Analysis:</strong>
+        This figure illustrates the comparison between raw fluorescence microscopy
+        images and post-processed segmentation using ImageJ and MATLAB for live/dead
+        cell analysis. Fluorescent filters were used to selectively visualize viable
+        and non-viable cells, after which image thresholding and watershed algorithms
+        enabled quantitative cell counting and signal-to-noise evaluation. This
+        workflow demonstrates how experimental fluorescence imaging can be integrated
+        with computational analysis to extract biologically meaningful metrics.
       </figcaption>
     </figure>
 
     <figure>
-      <img src="biomechanics_image2.png" alt="Mathematical Modeling">
+      <img src="measurements_image2.png"
+           alt="FRAP Fluorescence Recovery Curve with Exponential Fit">
       <figcaption>
-        <strong>Mathematical Modeling:</strong>
-        Static equilibrium equations were used to quantify spinal forces and
-        moments across trimesters, highlighting the biomechanical contribution
-        of increased lumbar curvature to lower back pain.
+        <strong>Fluorescence Recovery After Photobleaching (FRAP) Model:</strong>
+        This figure shows the fluorescence recovery curve obtained following
+        photobleaching of a defined region, along with an exponential fit generated
+        in MATLAB. The recovery kinetics were used to estimate molecular diffusion
+        properties and infer the viscosity of protein-dense droplets. This analysis
+        highlights the application of dynamic fluorescence techniques for probing
+        molecular transport in biological systems.
       </figcaption>
     </figure>
 
   </div>
 
   <div class="pdf-box">
-  <iframe src="biomechanics_poster.pdf"></iframe>
-  <div class="pdf-caption">📄 Project Poster</div>
-</div>
-
-<div class="pdf-box">
-  <iframe src="biomechanics_project.pdf"></iframe>
-  <div class="pdf-caption">📄 Project Report</div>
+  <iframe src="measurements_1.pdf"></iframe>
+  <div class="pdf-caption">📄 Detailed report</div>
 </div>
 
 </main>
