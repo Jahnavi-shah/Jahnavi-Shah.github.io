@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fluorescence Microscopy Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", Arial, sans-serif;
+      background: #f5f1e8;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+
+    nav {
+      padding: 1rem 2rem;
+      background: #f5f1e8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2b2b2b;
+      font-weight: 500;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0 1.5rem 0;
+    }
+
+    .media-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .figure-explanations {
+      margin-bottom: 2.5rem;
+    }
+
+    .figure-explanations p {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .pdf-links {
+      margin-top: 2rem;
+    }
+
+    .pdf-links a {
+      display: block;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #2b2b2b;
+    }
+
+    .pdf-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="index.html">← Back to Engineering</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main>
+  <h1>Fluorescence Microscopy and Image Analysis</h1>
+  <div class="subtitle">
+    BME Measurement and Analysis Laboratory (14:125:315)
+  </div>
+
+  <p>
+    For this laboratory project in BME Measurement and Analysis Laboratory
+    (14:125:315), we explored fluorescence microscopy as a quantitative tool for
+    biomedical image capture and analysis. Fluorescence imaging was used to
+    evaluate signal-to-noise ratio under varying exposure times and imaging
+    conditions.
+  </p>
+
+  <p>
+    We performed live/dead cell viability analysis and quantified cell
+    populations using ImageJ and MATLAB. In addition, Fluorescence Recovery
+    After Photobleaching (FRAP) experiments were conducted to analyze molecular
+    diffusion and estimate the viscosity of protein-dense droplets.
+  </p>
+
+  <p>
+    This project demonstrates the application of quantitative fluorescence
+    techniques for biological characterization and highlights the integration
+    of experimental imaging with computational analysis.
+  </p>
+
+  <!-- ================= IMAGE FILE REFERENCES (REPLACE FILENAMES ONLY) ================= -->
+  <div class="media-grid">
+
+    <!-- 🔴 IMAGE 1: Live/Dead comparison image -->
+    <!-- Replace 'live_dead_comparison.png' with your actual image filename -->
+    <img src="images/measurements_image1.png"
+         alt="Live and Dead Cell Comparison Using Fluorescence Microscopy, ImageJ, and MATLAB">
+
+    <!-- 🔴 IMAGE 2: FRAP recovery curve / fit model -->
+    <!-- Replace 'frap_fit_model.png' with your actual image filename -->
+    <img src="images/measurements_image2.png"
+         alt="FRAP Fluorescence Recovery Curve with Exponential Fit">
+
+  </div>
+
+  <!-- ================= IMAGE EXPLANATIONS ================= -->
+  <div class="figure-explanations">
+
+    <p>
+      <strong>Live/Dead Cell Viability Analysis:</strong>
+      This figure illustrates the comparison between raw fluorescence microscopy
+      images and post-processed segmentation using ImageJ and MATLAB for live/dead
+      cell analysis. Fluorescent filters were used to selectively visualize viable
+      and non-viable cells, after which image thresholding and watershed algorithms
+      enabled quantitative cell counting and signal-to-noise evaluation. This
+      workflow demonstrates how experimental fluorescence imaging can be integrated
+      with computational analysis to extract biologically meaningful metrics.
+    </p>
+
+    <p>
+      <strong>Fluorescence Recovery After Photobleaching (FRAP) Model:</strong>
+      This figure shows the fluorescence recovery curve obtained following
+      photobleaching of a defined region, along with an exponential fit generated
+      in MATLAB. The recovery kinetics were used to estimate molecular diffusion
+      properties and infer the viscosity of protein-dense droplets. This analysis
+      highlights the application of dynamic fluorescence techniques for probing
+      molecular transport in biological systems.
+    </p>
+
+  </div>
+
+  <!-- ================= PDF FILE REFERENCES (REPLACE FILENAMES ONLY) ================= -->
+  <div class="pdf-links">
+
+    <!-- 🔴 PDF 1: Lab report -->
+    <!-- Replace 'lab_report.pdf' with your actual PDF filename -->
+    <a href="pdfs/measurements_1.pdf" target="_blank">
+      📄 Laboratory Report (PDF)
+    </a>
+
+  </div>
+
+</main>
+
+</body>
+</html>
