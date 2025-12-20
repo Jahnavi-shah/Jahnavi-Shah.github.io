@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>3D-Printed In-Vitro Chronic Wound Model</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", 'Roboto', Arial, sans-serif;
+      background: #f5f1e8;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+    nav {
+      padding: 1rem 2rem;
+      background: #f5f1e8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2b2b2b;
+      font-weight: 500;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 2.5rem;
+    }
+
+    /* FIGURE GRID */
+   .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      margin: 3rem 0;
+      justify-items: center;
+    }
+
+    .media-grid figure {
+      margin: 0;
+       display: flex;
+  flex-direction: column;
+  align-items: center;
+    }
+
+    .media-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      display: block;
+    }
+
+    .media-grid figcaption {
+      margin-top: 0.85rem;
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.45;
+    }
+
+    /* PDF LINKS */
+    .pdf-links {
+      margin-top: 2.5rem;
+    }
+
+    .pdf-links a {
+      display: block;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #2b2b2b;
+    }
+
+    .pdf-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* PDF EMBED BOX */
+.pdf-box {
+  margin-top: 2.5rem;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2), 0 10px 15px rgba(0,0,0,0.1);
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdf-box:hover {
+  transform: perspective(1000px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25), 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.pdf-box iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+}
+
+.pdf-caption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+}
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="engineering.html">← Back to Engineering</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main>
+
+  <h1>3D-Printed In-Vitro Chronic Wound Model</h1>
+   <div class="subtitle">
+    Rutgers BME Research Lab
+  </div>
+
+  <p>
+    We developed a 3D-printed stamp based in vitro assay to model epithelial
+    wounds by creating uniform, reproducible abrasions in keratinocyte
+    monolayers under low-nutrient conditions. The stamp generates four
+    consistent scratches per well in a 96-well plate, achieving less than 10%
+    variation and enabling high-throughput, resource-efficient testing.
+  </p>
+
+  <p>
+    Compared to traditional 10 micro-liter pipette-tip methods, this system significantly
+    improves reproducibility and quantitative analysis of wound closure.
+  </p>
+
+  <!-- FIGURES -->
+  <div class="media-grid">
+
+    <figure>
+      <img src="stamp_image.png" alt="3D Printed Stamp">
+      <figcaption><strong>Figure 1.</strong> 3D-printed stamp used to create uniform scratches in epithelial monolayers.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="project1_image.png" alt="Wound model in vitro">
+      <figcaption><strong>Figure 2.</strong> Singular scratches made by control and previous version vs multiple scratches made by our stamp.</figcaption>
+    </figure>
+
+  </div>
+
+<div class="pdf-box">
+  <iframe src="project1.pdf"></iframe>
+  <div class="pdf-caption">📄 Report</div>
+</div>
+
+</main>
+
+</body>
+</html>
